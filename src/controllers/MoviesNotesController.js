@@ -1,6 +1,5 @@
 const knex = require("../database/knex");
 const AppError = require("../utils/AppError");
-
 class MoviesNotesController{
   async create(request, response){
     const { title, description, rating, tags } = request.body;
